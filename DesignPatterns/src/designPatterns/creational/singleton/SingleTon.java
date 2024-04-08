@@ -1,10 +1,10 @@
-package designPatterns.creational;
+package designPatterns.creational.singleton;
 
 public class SingleTon {
 
     private static SingleTon instance;
 
-    public static SingleTon getInstance(){
+    public static SingleTon getInstance() {
         if(instance == null) {
             synchronized (SingleTon.class) {
                 // double locking is only useful when the piece of code is inside synchronised block
@@ -16,6 +16,11 @@ public class SingleTon {
                 }
             }
         }
+
+//        if(instance == null){
+//            Thread.sleep(1000);
+//            instance = new SingleTon();
+//        }
 
         return instance;
     }
@@ -32,3 +37,5 @@ public class SingleTon {
 
     }
 }
+
+
