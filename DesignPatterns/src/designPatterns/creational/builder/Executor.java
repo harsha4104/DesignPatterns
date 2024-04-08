@@ -15,9 +15,7 @@ public class Executor {
 
 
         System.out.println(chair.getLegs());
-
         System.out.println(chair.getSeat());
-
         System.out.println(chair.isWheels());
         System.out.println(chair.getWheels());
 
